@@ -1,0 +1,15 @@
+{
+    "name": "youcode/you-event",
+    "autoload": {
+        "psr-4": {
+            "Youcode\\YouEvent\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "khadija",
+            "email": "ameksakhadija026@gmail.com"
+        }
+    ],
+    "require": {}
+}
