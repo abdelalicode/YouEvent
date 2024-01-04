@@ -100,31 +100,28 @@
                             <th>Email</th>
                             <th>First name</th>
                             <th>Last name</th>
-                            <th>Role name</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                       
+                       <?php   foreach($users as $user): ?>
                         <tr class="freelancer">
                             <td>
                                 <div class="d-flex align-items-center">
                                     <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt=""
                                         style="width: 45px; height: 45px" class="rounded-circle" />
                                     <div class="ms-3">
-                                        <p class="text-muted mb-0 f_email">khadija@gmail.com</p>
+                                        <p class="text-muted mb-0 f_email"><?php echo $user->email;?></p>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                            <p class="fw-bold mb-1 f_name">khadija</p> 
+                            <p class="fw-bold mb-1 f_name"><?php echo $user->nom;?></p> 
                             </td>
                             <td>
-                            <p class="fw-bold mb-1 f_name">Ameksa</p> 
+                            <p class="fw-bold mb-1 f_name"><?php echo $user->prenom;?></p> 
                             </td>
-                            <td class="f_position">
-                            <p class="fw-bold mb-1 f_name">user</p> 
-                            </td>
+                           
                             <td>
                                 <img class="delet_user" src="/assets/img/user-x.svg" alt="">
                                 <a href="edit.php"><img class="ms-2" src="/assets/img/edit.svg" alt=""></a>
@@ -132,33 +129,7 @@
                         </tr>
 
 
-                        <tr class="freelancer">
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt=""
-                                        style="width: 45px; height: 45px" class="rounded-circle" />
-                                    <div class="ms-3">
-                                        <p class="text-muted mb-0 f_email">ameksa@gmail.com</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                            <p class="fw-bold mb-1 f_name">khadija</p> 
-                            </td>
-                            <td>
-                            <p class="fw-bold mb-1 f_name">Ameksa</p> 
-                            </td>
-                            <td class="f_position">
-                            <p class="fw-bold mb-1 f_name">user</p> 
-                            </td>
-                            <td>
-                                <img class="delet_user" src="/assets/img/user-x.svg" alt="">
-                                <a href="edit.php"><img class="ms-2" src="/assets/img/edit.svg" alt=""></a>
-                            </td>
-                        </tr>
-                       
-                       
-                  
+                        <?php endforeach ?>
                        
                     </tbody>
                 </table>

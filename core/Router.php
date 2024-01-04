@@ -4,7 +4,7 @@ class Router
 {
     private $controller = 'App\Controller\AuthController';
     private $method = 'index';
-    private $param = [];
+    private $param =[];
 
     public function __construct()
     {
@@ -54,7 +54,7 @@ class Router
     public function setStatusCode($statusCode)
     {
         http_response_code($statusCode);
-        include(__DIR__ . "/../app/View/main/" . $statusCode . ".view.php");
+        include(__DIR__ . "/../app/View/" . $statusCode . ".index.php");
         die();
     }
 }

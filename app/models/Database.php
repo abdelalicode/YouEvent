@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\models;
 
 require_once  __DIR__. '/../../config/config.php';
 
